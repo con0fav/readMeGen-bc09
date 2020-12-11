@@ -36,9 +36,10 @@ const readmeQuestions = [
       },
       // make a list of options for license
       {
-        type: 'input',
+        type: 'list',
         message: 'What is the license?',
         name: 'license',
+        choices: ['MIT', 'GNU GPLv3', 'Apache 2.0', 'Creative Commons family', 'Unlicense'],
       },
       {
         type: 'input',
