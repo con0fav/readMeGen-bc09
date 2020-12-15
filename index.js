@@ -3,6 +3,7 @@ const fs = require('fs');
 
 // array of questions for user
 const readmeQuestions = [
+  // input type takes text input from user
       {
         type: 'input',
         message: 'What is the name of your project?',
@@ -28,18 +29,18 @@ const readmeQuestions = [
         message: 'How do you use this?',
         name: 'usage',
       },
-      // no idea what this section means yet
       {
         type: 'input',
-        message: 'What are the tests? or How do you test this?',
+        message: 'How do you test your project?',
         name: 'tests',
       },
-      // make a list of options for license
+      // list type creates list from an array for users to choose options from
       {
-        type: 'input',
+        type: 'list',
         message: 'What is the license?',
         name: 'license',
       },
+      // append to a contact form headed "questions"
       {
         type: 'input',
         message: 'What is your Github username?',
@@ -63,3 +64,7 @@ function init() {
 
 // function call to initialize program
 init();
+
+
+// day 2 activity 14
+// day 2 activity 20
