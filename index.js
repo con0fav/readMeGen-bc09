@@ -1,6 +1,11 @@
+// require Inquirer module
 const inquirer = require('inquirer');
+// require fs (file system) module
 const fs = require('fs');
+// require markdown.js, which creates the behavior for writing markdown in the readme file that gets generated
 const markdown = require('./markdown');
+// makes sure the filename is README.md
+const fileName = "READMEgenerated.md";
 
 // array of questions for user
 const questions = [
@@ -13,11 +18,6 @@ const questions = [
         type: 'input',
         message: 'Describe your project',
         name: 'description',
-      },
-      {
-        type: 'input',
-        message: 'Table of contents',
-        name: 'contents',
       },
       {
         type: 'input',
@@ -56,15 +56,17 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
-
-  fs.writeFile(filename, markdown, (err) =>
+  // uses markdown.js file to create markdown
+  const markdown = createMarkdown(data);
+  // fs method to write the file, includes if/else for throwing an error message in case of an error
+  fs.writeFile(fileName, markdown, (err) =>
       err ? console.log(err) : console.log('Success!')
     );
 };
 
 // function to initialize program
 function init() {
+  // inquirer node module
   inquirer.prompt(questions).then(function(data){
     writeToFile(fileName, data)
   })
