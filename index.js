@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // require markdown.js, which creates the behavior for writing markdown in the readme file that gets generated
 const generateMarkdown = require('./utils/generateMarkdown');
-// makes sure the filename is README.md
+// makes sure the filename is READMEgenerated.md
 const fileName = "READMEgenerated.md";
 
 // array of questions for user
