@@ -1,6 +1,6 @@
-# sampleREADME 
+# sample 
 # Description 
-This readme is a sample of what can be made with this readme generator
+sample readme
      
 ## Table of contents 
 [Installation](#installation) 
@@ -10,17 +10,17 @@ This readme is a sample of what can be made with this readme generator
 [Questions/Contact](#contact) 
 
 ## Installation 
-test 
+enter text in prompts 
 
 ## Usage 
-test 
+open index.js in node 
 
 ## License 
-This application uses the MIT license 
+This application uses the Creative Commons family license 
 
 ## Testing 
-test 
+N/A 
 
-## Questions/Contact 
+## Contact 
 **Github:** test 
-**Email:** test 
+**Email:** test@sample.com 
