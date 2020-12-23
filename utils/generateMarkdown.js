@@ -25,7 +25,7 @@ This application uses the ${data.license} license
 ## Testing 
 ${data.tests} 
 
-## Questions/Contact 
+## Contact 
 **Github:** ${data.username} 
 **Email:** ${data.email} `;
 }
