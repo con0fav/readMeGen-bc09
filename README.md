@@ -19,8 +19,5 @@ Simply run index.js in node and fill out the prompts.
 ## License
 This application uses the Creative Commons family license
 
-## Questions/Contact
+## Contact
 **Github:** con0fav
-**Email:** connor.favero@gmail.com
-
-    
